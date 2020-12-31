@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./Item.css";
 class Item extends Component {
     constructor(props) {
         super(props);
@@ -35,7 +35,7 @@ class Item extends Component {
                     className="itemImage"
                     src={this.props.image}
                     alt={this.props.name}
-                />
+                /><br/>
                 {this.props.name}
                 <div className="itemPrice">{this.props.price}</div>
                 <button color="primary" onClick={this.addToCart.bind(this, image, name, price, id, quantity)}>장바구니에 담기</button>
